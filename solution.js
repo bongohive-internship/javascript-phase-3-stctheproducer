@@ -23,3 +23,28 @@ const sumOfMultis = () => {
 };
 
 sumOfMultis();
+
+function assignGrade(grade) {
+	if (grade < 40) {
+		return `For ${grade}, you got an F`;
+	} else if (grade >= 40 && grade < 60) {
+		return `For ${grade}, you got a D`;
+	} else if (grade >= 60 && grade < 75) {
+		return `For ${grade}, you got a C`;
+	} else if (grade >= 75 && grade < 90) {
+		return `For ${grade}, you got a B`;
+	} else {
+		return `For ${grade}, you got an A`;
+	}
+}
+
+console.log(assignGrade(35));
+console.log(assignGrade(50));
+console.log(assignGrade(65));
+console.log(assignGrade(80));
+console.log(assignGrade(97));
+
+for (let i = 60; i <= 100; i++) {
+	console.log(assignGrade(i));
+}
+
